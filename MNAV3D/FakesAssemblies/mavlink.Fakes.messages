@@ -1,0 +1,62 @@
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.PacketReceivedDelegate: type is sealed.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavAutopilot: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavType: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavModeFlag: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavModeFlagDecodePosition: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavGoto: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavMode: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavState: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavComponent: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavSysStatusSensor: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavFrame: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavlinkDataStreamType: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.FenceAction: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.FenceBreach: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavMountMode: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavCmd: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavDataStream: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavRoi: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavCmdAck: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavParamType: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavResult: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavMissionResult: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavSeverity: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavPowerStatus: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.SerialControlDev: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.SerialControlFlag: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavDistanceSensor: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavProtocolCapability: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavEstimatorType: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavBatteryType: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate stub for MavLinkNet.MavBatteryFunction: type is a value type.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.PacketReceivedDelegate: type is a delegate.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavAutopilot: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavType: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavModeFlag: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavModeFlagDecodePosition: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavGoto: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavMode: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavState: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavComponent: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavSysStatusSensor: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavFrame: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavlinkDataStreamType: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.FenceAction: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.FenceBreach: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavMountMode: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavCmd: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavDataStream: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavRoi: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavCmdAck: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavParamType: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavResult: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavMissionResult: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavSeverity: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavPowerStatus: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.SerialControlDev: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.SerialControlFlag: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavDistanceSensor: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavProtocolCapability: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavEstimatorType: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavBatteryType: type is an enum.
+C:\1064N\Programacion\C#\MNAV3D_2013\MNAV3D\MNAV3D\Fakes\mavlink.fakes : warning : Cannot generate shim for MavLinkNet.MavBatteryFunction: type is an enum.

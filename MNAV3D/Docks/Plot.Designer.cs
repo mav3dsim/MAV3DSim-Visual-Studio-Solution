@@ -1,0 +1,566 @@
+﻿namespace MAV3DSim.Docks
+{
+    partial class Plot
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Mitov.PlotLab.ScopeDataView scopeDataView1 = new Mitov.PlotLab.ScopeDataView();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground1 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.DisplayGridLineSettings displayGridLineSettings1 = new Mitov.PlotLab.DisplayGridLineSettings();
+            Vcl.VclPen vclPen1 = new Vcl.VclPen();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Plot));
+            Mitov.PlotLab.DisplayHighlighting displayHighlighting1 = new Mitov.PlotLab.DisplayHighlighting();
+            Mitov.PlotLab.ChannelItemHighlighting channelItemHighlighting1 = new Mitov.PlotLab.ChannelItemHighlighting();
+            Mitov.PlotLab.ChannelItemHighlighting channelItemHighlighting2 = new Mitov.PlotLab.ChannelItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting1 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting2 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting3 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting4 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting5 = new Mitov.PlotLab.DisplayItemHighlighting();
+            Mitov.PlotLab.ChannelMouseHitPoint channelMouseHitPoint1 = new Mitov.PlotLab.ChannelMouseHitPoint();
+            Mitov.SignalLab.OptionalLabel optionalLabel1 = new Mitov.SignalLab.OptionalLabel();
+            Mitov.PlotLab.DisplayItemHighlighting displayItemHighlighting6 = new Mitov.PlotLab.DisplayItemHighlighting();
+            OpenWire.Proxy.PinList pinList1 = new OpenWire.Proxy.PinList();
+            Mitov.PlotLab.ScopeLegendView scopeLegendView1 = new Mitov.PlotLab.ScopeLegendView();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground2 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.LegendViewButtonSettings legendViewButtonSettings1 = new Mitov.PlotLab.LegendViewButtonSettings();
+            Mitov.PlotLab.LegendGroup legendGroup1 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel1 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup2 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel2 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup3 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel3 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup4 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel4 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup5 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel5 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup6 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel6 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.LegendGroup legendGroup7 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel7 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.DisplayViewSize displayViewSize1 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.LegendGroup legendGroup8 = new Mitov.PlotLab.LegendGroup();
+            Mitov.PlotLab.DisplayLabel displayLabel8 = new Mitov.PlotLab.DisplayLabel();
+            Mitov.PlotLab.DisplayTitle displayTitle1 = new Mitov.PlotLab.DisplayTitle();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground3 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.DisplayViewSize displayViewSize2 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayToolBar displayToolBar1 = new Mitov.PlotLab.DisplayToolBar();
+            Mitov.PlotLab.DisplayToolBarButtons displayToolBarButtons1 = new Mitov.PlotLab.DisplayToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton1 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton2 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton3 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton4 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton5 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton6 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton7 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton8 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton9 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton10 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton11 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton12 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.ToolBarPosition toolBarPosition1 = new Mitov.PlotLab.ToolBarPosition();
+            Mitov.PlotLab.DisplayTrails displayTrails1 = new Mitov.PlotLab.DisplayTrails();
+            Mitov.PlotLab.ScopeXAxis scopeXAxis1 = new Mitov.PlotLab.ScopeXAxis();
+            Mitov.PlotLab.DisplayTitleLabel displayTitleLabel1 = new Mitov.PlotLab.DisplayTitleLabel();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground4 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.ViewButtonSettings viewButtonSettings1 = new Mitov.PlotLab.ViewButtonSettings();
+            Mitov.PlotLab.DisplayAxisCursorSettings displayAxisCursorSettings1 = new Mitov.PlotLab.DisplayAxisCursorSettings();
+            Mitov.PlotLab.DisplayGridDirectionalLinesSettings displayGridDirectionalLinesSettings1 = new Mitov.PlotLab.DisplayGridDirectionalLinesSettings();
+            Mitov.PlotLab.DisplayGridLineSettings displayGridLineSettings2 = new Mitov.PlotLab.DisplayGridLineSettings();
+            Vcl.VclPen vclPen2 = new Vcl.VclPen();
+            Mitov.PlotLab.DisplayGridLineSettings displayGridLineSettings3 = new Mitov.PlotLab.DisplayGridLineSettings();
+            Vcl.VclPen vclPen3 = new Vcl.VclPen();
+            Mitov.PlotLab.AxisFormat axisFormat1 = new Mitov.PlotLab.AxisFormat();
+            Mitov.PlotLab.MajorTicks majorTicks1 = new Mitov.PlotLab.MajorTicks();
+            Mitov.PlotLab.TicksStart ticksStart1 = new Mitov.PlotLab.TicksStart();
+            Mitov.PlotLab.MaxAxisValue maxAxisValue1 = new Mitov.PlotLab.MaxAxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange1 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue1 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue2 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue1 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.ScopeMaxSample scopeMaxSample1 = new Mitov.PlotLab.ScopeMaxSample();
+            Mitov.PlotLab.AxisValue axisValue1 = new Mitov.PlotLab.AxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange2 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue3 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue4 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue2 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.MinorTicks minorTicks1 = new Mitov.PlotLab.MinorTicks();
+            Mitov.PlotLab.AxisToolBar axisToolBar1 = new Mitov.PlotLab.AxisToolBar();
+            Mitov.PlotLab.AxisToolBarButtons axisToolBarButtons1 = new Mitov.PlotLab.AxisToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton13 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton14 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton15 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton16 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.ScopeXAxisUnitScale scopeXAxisUnitScale1 = new Mitov.PlotLab.ScopeXAxisUnitScale();
+            Mitov.PlotLab.DisplayViewSize displayViewSize3 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayAxisZoom displayAxisZoom1 = new Mitov.PlotLab.DisplayAxisZoom();
+            Mitov.PlotLab.DisplayValueRange displayValueRange3 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue5 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue6 = new Mitov.PlotLab.DisplayOptionalValue();
+            OpenWire.Proxy.StatePin statePin1 = new OpenWire.Proxy.StatePin();
+            OpenWire.Proxy.PinList pinList2 = new OpenWire.Proxy.PinList();
+            Mitov.PlotLab.ScopeYAxis scopeYAxis1 = new Mitov.PlotLab.ScopeYAxis();
+            Mitov.PlotLab.ScopeAutoScaling scopeAutoScaling1 = new Mitov.PlotLab.ScopeAutoScaling();
+            Mitov.PlotLab.ScopeAutoScalingSpace scopeAutoScalingSpace1 = new Mitov.PlotLab.ScopeAutoScalingSpace();
+            Mitov.PlotLab.ScopeAutoScalingSpace scopeAutoScalingSpace2 = new Mitov.PlotLab.ScopeAutoScalingSpace();
+            Mitov.PlotLab.DisplayTitleLabel displayTitleLabel2 = new Mitov.PlotLab.DisplayTitleLabel();
+            Mitov.PlotLab.DisplayViewBackground displayViewBackground5 = new Mitov.PlotLab.DisplayViewBackground();
+            Mitov.PlotLab.ViewButtonSettings viewButtonSettings2 = new Mitov.PlotLab.ViewButtonSettings();
+            Mitov.PlotLab.DisplayAxisCursorSettings displayAxisCursorSettings2 = new Mitov.PlotLab.DisplayAxisCursorSettings();
+            Mitov.PlotLab.DisplayGridDirectionalLinesSettings displayGridDirectionalLinesSettings2 = new Mitov.PlotLab.DisplayGridDirectionalLinesSettings();
+            Mitov.PlotLab.DisplayGridLineSettings displayGridLineSettings4 = new Mitov.PlotLab.DisplayGridLineSettings();
+            Vcl.VclPen vclPen4 = new Vcl.VclPen();
+            Mitov.PlotLab.DisplayGridLineSettings displayGridLineSettings5 = new Mitov.PlotLab.DisplayGridLineSettings();
+            Vcl.VclPen vclPen5 = new Vcl.VclPen();
+            Mitov.PlotLab.AxisFormat axisFormat2 = new Mitov.PlotLab.AxisFormat();
+            Mitov.PlotLab.MajorTicks majorTicks2 = new Mitov.PlotLab.MajorTicks();
+            Mitov.PlotLab.TicksStart ticksStart2 = new Mitov.PlotLab.TicksStart();
+            Mitov.PlotLab.MaxAxisValue maxAxisValue2 = new Mitov.PlotLab.MaxAxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange4 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue7 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue8 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue3 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.AxisValue axisValue2 = new Mitov.PlotLab.AxisValue();
+            Mitov.PlotLab.DisplayValueRange displayValueRange5 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue9 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue10 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.BasicAxisValue basicAxisValue4 = new Mitov.PlotLab.BasicAxisValue();
+            Mitov.PlotLab.MinorTicks minorTicks2 = new Mitov.PlotLab.MinorTicks();
+            Mitov.PlotLab.AxisToolBar axisToolBar2 = new Mitov.PlotLab.AxisToolBar();
+            Mitov.PlotLab.AxisToolBarButtons axisToolBarButtons2 = new Mitov.PlotLab.AxisToolBarButtons();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton17 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton18 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton19 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayToolBarButton displayToolBarButton20 = new Mitov.PlotLab.DisplayToolBarButton();
+            Mitov.PlotLab.DisplayViewSize displayViewSize4 = new Mitov.PlotLab.DisplayViewSize();
+            Mitov.PlotLab.DisplayAxisZoom displayAxisZoom2 = new Mitov.PlotLab.DisplayAxisZoom();
+            Mitov.PlotLab.DisplayValueRange displayValueRange6 = new Mitov.PlotLab.DisplayValueRange();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue11 = new Mitov.PlotLab.DisplayOptionalValue();
+            Mitov.PlotLab.DisplayOptionalValue displayOptionalValue12 = new Mitov.PlotLab.DisplayOptionalValue();
+            OpenWire.Proxy.StatePin statePin2 = new OpenWire.Proxy.StatePin();
+            Mitov.PlotLab.DisplayZoom displayZoom1 = new Mitov.PlotLab.DisplayZoom();
+            this.scope1 = new Mitov.PlotLab.Scope(this.components);
+            this.tvPlotVariables = new System.Windows.Forms.TreeView();
+            this.tbScale = new System.Windows.Forms.TrackBar();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.scope1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbScale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // scope1
+            // 
+            this.scope1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayViewBackground1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            scopeDataView1.Background = displayViewBackground1;
+            vclPen1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            vclPen1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("vclPen1.InternalData")));
+            displayGridLineSettings1.Pen = vclPen1;
+            scopeDataView1.Border = displayGridLineSettings1;
+            this.scope1.DataView = scopeDataView1;
+            this.scope1.Dock = System.Windows.Forms.DockStyle.Fill;
+            channelItemHighlighting1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.ChannelLinks = channelItemHighlighting1;
+            channelItemHighlighting2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Channels = channelItemHighlighting2;
+            displayItemHighlighting1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.CursorLinks = displayItemHighlighting1;
+            displayItemHighlighting2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Cursors = displayItemHighlighting2;
+            displayItemHighlighting3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Ellipses = displayItemHighlighting3;
+            displayItemHighlighting4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Labels = displayItemHighlighting4;
+            displayItemHighlighting5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Markers = displayItemHighlighting5;
+            channelMouseHitPoint1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            optionalLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 11, 0);
+            optionalLabel1.Text = "";
+            channelMouseHitPoint1.PointLabel = optionalLabel1;
+            displayHighlighting1.MouseHitPoint = channelMouseHitPoint1;
+            displayItemHighlighting6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayHighlighting1.Zones = displayItemHighlighting6;
+            this.scope1.Highlighting = displayHighlighting1;
+            pinList1.ConnectionData = ((OpenWire.PinConnections)(resources.GetObject("pinList1.ConnectionData")));
+            this.scope1.InputPins = pinList1;
+            this.scope1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("scope1.InternalData")));
+            displayViewBackground2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            scopeLegendView1.Background = displayViewBackground2;
+            legendViewButtonSettings1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.Cursor = System.Windows.Forms.Cursors.Hand;
+            legendViewButtonSettings1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            legendViewButtonSettings1.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            scopeLegendView1.Buttons = legendViewButtonSettings1;
+            displayLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel1.Text = "";
+            legendGroup1.Caption = displayLabel1;
+            legendGroup1.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.ChannelLinks = legendGroup1;
+            displayLabel2.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel2.Text = "";
+            legendGroup2.Caption = displayLabel2;
+            legendGroup2.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.Channels = legendGroup2;
+            displayLabel3.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel3.Text = "";
+            legendGroup3.Caption = displayLabel3;
+            legendGroup3.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.CursorLinks = legendGroup3;
+            displayLabel4.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel4.Text = "";
+            legendGroup4.Caption = displayLabel4;
+            legendGroup4.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.Cursors = legendGroup4;
+            displayLabel5.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel5.Text = "";
+            legendGroup5.Caption = displayLabel5;
+            legendGroup5.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.Ellipses = legendGroup5;
+            scopeLegendView1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 11, 0);
+            scopeLegendView1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("scopeLegendView1.InternalData")));
+            displayLabel6.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel6.Text = "";
+            legendGroup6.Caption = displayLabel6;
+            legendGroup6.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.Labels = legendGroup6;
+            displayLabel7.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel7.Text = "";
+            legendGroup7.Caption = displayLabel7;
+            legendGroup7.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.MarkerGroups = legendGroup7;
+            displayViewSize1.Size = ((uint)(100u));
+            scopeLegendView1.ViewSize = displayViewSize1;
+            displayLabel8.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 0);
+            displayLabel8.Text = "";
+            legendGroup8.Caption = displayLabel8;
+            legendGroup8.Cursor = System.Windows.Forms.Cursors.Hand;
+            scopeLegendView1.Zones = legendGroup8;
+            this.scope1.Legend = scopeLegendView1;
+            this.scope1.Location = new System.Drawing.Point(0, 0);
+            this.scope1.Name = "scope1";
+            this.scope1.RefreshInterval = ((uint)(100u));
+            this.scope1.Size = new System.Drawing.Size(401, 262);
+            this.scope1.SizeLimit = ((uint)(0u));
+            this.scope1.TabIndex = 1;
+            this.scope1.Text = "scope1";
+            displayViewBackground3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayTitle1.Background = displayViewBackground3;
+            displayTitle1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 21, 1);
+            displayTitle1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("displayTitle1.InternalData")));
+            displayTitle1.Text = "Scope";
+            displayViewSize2.Size = ((uint)(100u));
+            displayTitle1.ViewSize = displayViewSize2;
+            this.scope1.Title = displayTitle1;
+            displayToolBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayToolBarButtons1.Copy = displayToolBarButton1;
+            displayToolBarButtons1.Hold = displayToolBarButton2;
+            displayToolBarButtons1.Print = displayToolBarButton3;
+            displayToolBarButtons1.Save = displayToolBarButton4;
+            displayToolBarButtons1.Setup = displayToolBarButton5;
+            displayToolBarButtons1.XYZoomOn = displayToolBarButton6;
+            displayToolBarButtons1.ZoomIn = displayToolBarButton7;
+            displayToolBarButtons1.ZoomMode = displayToolBarButton8;
+            displayToolBarButtons1.ZoomNext = displayToolBarButton9;
+            displayToolBarButtons1.ZoomOff = displayToolBarButton10;
+            displayToolBarButtons1.ZoomOut = displayToolBarButton11;
+            displayToolBarButtons1.ZoomPrevious = displayToolBarButton12;
+            displayToolBar1.Buttons = displayToolBarButtons1;
+            displayToolBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            displayToolBar1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            displayToolBar1.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            toolBarPosition1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("toolBarPosition1.InternalData")));
+            displayToolBar1.Position = toolBarPosition1;
+            this.scope1.ToolBar = displayToolBar1;
+            displayTrails1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            displayTrails1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 11, 0);
+            this.scope1.Trails = displayTrails1;
+            displayTitleLabel1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 1);
+            displayTitleLabel1.Text = "";
+            scopeXAxis1.AxisLabel = displayTitleLabel1;
+            displayViewBackground4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            scopeXAxis1.Background = displayViewBackground4;
+            viewButtonSettings1.Cursor = System.Windows.Forms.Cursors.Hand;
+            viewButtonSettings1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings1.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            scopeXAxis1.Button = viewButtonSettings1;
+            scopeXAxis1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            scopeXAxis1.CursorSettings = displayAxisCursorSettings1;
+            vclPen2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            vclPen2.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("vclPen2.InternalData")));
+            displayGridLineSettings2.Pen = vclPen2;
+            displayGridDirectionalLinesSettings1.Lines = displayGridLineSettings2;
+            vclPen3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            vclPen3.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("vclPen3.InternalData")));
+            displayGridLineSettings3.Pen = vclPen3;
+            displayGridDirectionalLinesSettings1.ZeroLine = displayGridLineSettings3;
+            scopeXAxis1.DataView = displayGridDirectionalLinesSettings1;
+            scopeXAxis1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 11, 0);
+            axisFormat1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("axisFormat1.InternalData")));
+            axisFormat1.Precision = 3;
+            scopeXAxis1.Format = axisFormat1;
+            scopeXAxis1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("scopeXAxis1.InternalData")));
+            majorTicks1.StartFrom = ticksStart1;
+            scopeXAxis1.MajorTicks = majorTicks1;
+            maxAxisValue1.DataValue = 1024D;
+            maxAxisValue1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("maxAxisValue1.InternalData")));
+            displayOptionalValue1.Enabled = false;
+            displayOptionalValue1.Value = 1000D;
+            displayValueRange1.High = displayOptionalValue1;
+            displayOptionalValue2.Enabled = false;
+            displayOptionalValue2.Value = -1000D;
+            displayValueRange1.Low = displayOptionalValue2;
+            maxAxisValue1.Range = displayValueRange1;
+            basicAxisValue1.Value = 1024D;
+            maxAxisValue1.Tick = basicAxisValue1;
+            maxAxisValue1.Value = 1024D;
+            scopeXAxis1.Max = maxAxisValue1;
+            scopeMaxSample1.Value = ((uint)(1024u));
+            scopeXAxis1.MaxSample = scopeMaxSample1;
+            axisValue1.AutoScale = false;
+            axisValue1.DataValue = 0D;
+            displayOptionalValue3.Enabled = false;
+            displayOptionalValue3.Value = 1000D;
+            displayValueRange2.High = displayOptionalValue3;
+            displayOptionalValue4.Enabled = false;
+            displayOptionalValue4.Value = -1000D;
+            displayValueRange2.Low = displayOptionalValue4;
+            axisValue1.Range = displayValueRange2;
+            basicAxisValue2.Value = 0D;
+            axisValue1.Tick = basicAxisValue2;
+            axisValue1.Value = 0D;
+            scopeXAxis1.Min = axisValue1;
+            scopeXAxis1.MinorTicks = minorTicks1;
+            axisToolBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            axisToolBarButtons1.ZoomIn = displayToolBarButton13;
+            axisToolBarButtons1.ZoomOff = displayToolBarButton14;
+            axisToolBarButtons1.ZoomOneDir = displayToolBarButton15;
+            axisToolBarButtons1.ZoomOut = displayToolBarButton16;
+            axisToolBar1.Buttons = axisToolBarButtons1;
+            axisToolBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            axisToolBar1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar1.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            scopeXAxis1.ToolBar = axisToolBar1;
+            scopeXAxis1.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            scopeXAxis1.UnitScale = scopeXAxisUnitScale1;
+            displayViewSize3.Size = ((uint)(100u));
+            scopeXAxis1.ViewSize = displayViewSize3;
+            displayOptionalValue5.Enabled = false;
+            displayOptionalValue5.Value = 100000000D;
+            displayValueRange3.High = displayOptionalValue5;
+            displayOptionalValue6.Enabled = true;
+            displayOptionalValue6.Value = 1E-07D;
+            displayValueRange3.Low = displayOptionalValue6;
+            displayAxisZoom1.Range = displayValueRange3;
+            scopeXAxis1.Zooming = displayAxisZoom1;
+            statePin1.ConnectionData = ((OpenWire.PinConnections)(resources.GetObject("statePin1.ConnectionData")));
+            scopeXAxis1.ZoomPin = statePin1;
+            this.scope1.XAxis = scopeXAxis1;
+            pinList2.ConnectionData = ((OpenWire.PinConnections)(resources.GetObject("pinList2.ConnectionData")));
+            this.scope1.XInputPins = pinList2;
+            scopeAutoScaling1.MaxHistory = ((uint)(20u));
+            scopeAutoScalingSpace1.Space = ((uint)(20u));
+            scopeAutoScalingSpace1.Threshold = ((uint)(10u));
+            scopeAutoScaling1.SpaceAbove = scopeAutoScalingSpace1;
+            scopeAutoScalingSpace2.Space = ((uint)(20u));
+            scopeAutoScalingSpace2.Threshold = ((uint)(10u));
+            scopeAutoScaling1.SpaceBelow = scopeAutoScalingSpace2;
+            scopeYAxis1.AutoScaling = scopeAutoScaling1;
+            displayTitleLabel2.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 13, 1);
+            displayTitleLabel2.Text = "Y Axis";
+            scopeYAxis1.AxisLabel = displayTitleLabel2;
+            displayViewBackground5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            scopeYAxis1.Background = displayViewBackground5;
+            viewButtonSettings2.Cursor = System.Windows.Forms.Cursors.Hand;
+            viewButtonSettings2.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            viewButtonSettings2.MouseOverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            scopeYAxis1.Button = viewButtonSettings2;
+            scopeYAxis1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            scopeYAxis1.CursorSettings = displayAxisCursorSettings2;
+            vclPen4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            vclPen4.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("vclPen4.InternalData")));
+            displayGridLineSettings4.Pen = vclPen4;
+            displayGridDirectionalLinesSettings2.Lines = displayGridLineSettings4;
+            vclPen5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            vclPen5.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("vclPen5.InternalData")));
+            displayGridLineSettings5.Pen = vclPen5;
+            displayGridDirectionalLinesSettings2.ZeroLine = displayGridLineSettings5;
+            scopeYAxis1.DataView = displayGridDirectionalLinesSettings2;
+            scopeYAxis1.Font = new Vcl.VclFont(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))), "Arial", 1, 0, true, 11, 0);
+            axisFormat2.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("axisFormat2.InternalData")));
+            axisFormat2.Precision = 3;
+            scopeYAxis1.Format = axisFormat2;
+            scopeYAxis1.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("scopeYAxis1.InternalData")));
+            majorTicks2.StartFrom = ticksStart2;
+            scopeYAxis1.MajorTicks = majorTicks2;
+            maxAxisValue2.DataValue = 1000D;
+            maxAxisValue2.InternalData = ((Vcl.VclBinaryData)(resources.GetObject("maxAxisValue2.InternalData")));
+            displayOptionalValue7.Enabled = false;
+            displayOptionalValue7.Value = 1000D;
+            displayValueRange4.High = displayOptionalValue7;
+            displayOptionalValue8.Enabled = false;
+            displayOptionalValue8.Value = -1000D;
+            displayValueRange4.Low = displayOptionalValue8;
+            maxAxisValue2.Range = displayValueRange4;
+            basicAxisValue3.Value = 0D;
+            maxAxisValue2.Tick = basicAxisValue3;
+            maxAxisValue2.Value = 1000D;
+            scopeYAxis1.Max = maxAxisValue2;
+            axisValue2.DataValue = -1000D;
+            displayOptionalValue9.Enabled = false;
+            displayOptionalValue9.Value = 1000D;
+            displayValueRange5.High = displayOptionalValue9;
+            displayOptionalValue10.Enabled = false;
+            displayOptionalValue10.Value = -1000D;
+            displayValueRange5.Low = displayOptionalValue10;
+            axisValue2.Range = displayValueRange5;
+            basicAxisValue4.Value = 0D;
+            axisValue2.Tick = basicAxisValue4;
+            axisValue2.Value = -1000D;
+            scopeYAxis1.Min = axisValue2;
+            scopeYAxis1.MinorTicks = minorTicks2;
+            axisToolBar2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            axisToolBarButtons2.ZoomIn = displayToolBarButton17;
+            axisToolBarButtons2.ZoomOff = displayToolBarButton18;
+            axisToolBarButtons2.ZoomOneDir = displayToolBarButton19;
+            axisToolBarButtons2.ZoomOut = displayToolBarButton20;
+            axisToolBar2.Buttons = axisToolBarButtons2;
+            axisToolBar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            axisToolBar2.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.GlyphColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseDownBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseDownButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseOverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            axisToolBar2.MouseOverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            scopeYAxis1.ToolBar = axisToolBar2;
+            scopeYAxis1.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            displayViewSize4.Size = ((uint)(100u));
+            scopeYAxis1.ViewSize = displayViewSize4;
+            displayOptionalValue11.Enabled = false;
+            displayOptionalValue11.Value = 100000000D;
+            displayValueRange6.High = displayOptionalValue11;
+            displayOptionalValue12.Enabled = true;
+            displayOptionalValue12.Value = 1E-07D;
+            displayValueRange6.Low = displayOptionalValue12;
+            displayAxisZoom2.Range = displayValueRange6;
+            scopeYAxis1.Zooming = displayAxisZoom2;
+            statePin2.ConnectionData = ((OpenWire.PinConnections)(resources.GetObject("statePin2.ConnectionData")));
+            scopeYAxis1.ZoomPin = statePin2;
+            this.scope1.YAxis = scopeYAxis1;
+            displayZoom1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.scope1.Zooming = displayZoom1;
+            // 
+            // tvPlotVariables
+            // 
+            this.tvPlotVariables.CheckBoxes = true;
+            this.tvPlotVariables.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tvPlotVariables.Location = new System.Drawing.Point(0, 45);
+            this.tvPlotVariables.Name = "tvPlotVariables";
+            this.tvPlotVariables.Size = new System.Drawing.Size(483, 217);
+            this.tvPlotVariables.TabIndex = 4;
+            this.tvPlotVariables.Click += new System.EventHandler(this.tvPlotVariables_Click);
+            // 
+            // tbScale
+            // 
+            this.tbScale.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbScale.Location = new System.Drawing.Point(0, 0);
+            this.tbScale.Maximum = 500;
+            this.tbScale.Name = "tbScale";
+            this.tbScale.Size = new System.Drawing.Size(483, 45);
+            this.tbScale.TabIndex = 5;
+            this.tbScale.Value = 100;
+            this.tbScale.ValueChanged += new System.EventHandler(this.tbScale_ValueChanged);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.tvPlotVariables);
+            this.splitContainer1.Panel1.Controls.Add(this.tbScale);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.scope1);
+            this.splitContainer1.Size = new System.Drawing.Size(888, 262);
+            this.splitContainer1.SplitterDistance = 483;
+            this.splitContainer1.TabIndex = 6;
+            // 
+            // Plot
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(888, 262);
+            this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Plot";
+            this.Text = "y ";
+            ((System.ComponentModel.ISupportInitialize)(this.scope1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbScale)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Mitov.PlotLab.Scope scope1;
+        private System.Windows.Forms.TreeView tvPlotVariables;
+        private System.Windows.Forms.TrackBar tbScale;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+    }
+}

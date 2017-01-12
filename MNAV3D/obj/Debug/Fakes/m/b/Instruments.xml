@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Instruments</name>
+    </assembly>
+    <members>
+        <member name="T:Instruments.ScopeControl">
+            <summary>
+            Oscilloscope drawing control. :) 
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.#ctor">
+            <summary>
+            Constructor the ScopeControl
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.Traces_OnChange(System.Object,System.ComponentModel.ListChangedEventArgs)">
+            <summary>
+            Called anytime a trace is added/removed
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.Start">
+            <summary>
+            Call this to begin sending points to the scope. This flushes the internal
+            buffers and begins drawing traces from t=0
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.Stop">
+            <summary>
+            Call this to signal the end of incoming points to the scope
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.DrawTraces">
+            <summary>
+            Call this to draw the trace(s) that are currently enabled
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.DrawTraces_ClipY(System.Single)">
+            <summary>
+            Don't call this from anywhere except DrawTraces. Ensures the Y
+            value is valid. 
+            </summary>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Instruments.ScopeControl.recalculateGridParameters">
+            <summary>
+            This recalculates all of the grid parameters whenever one of the attributes
+            have been changed. You should only write the grid parameters through the
+            associated properties, otherwise things get out of sync. 
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.ReinitializeScopeControl">
+            <summary>
+            Repositions controls on the form
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.CreateControlBackground">
+            <summary>
+            This creates the background bitmap and scales it properly. Only
+            call this from ReinitializeScopeControl
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.DrawGrid(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Pen)">
+            <summary>
+            Draws a grid, starting from the center
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.OnResize(System.EventArgs)">
+            <summary>
+            Called on resize
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Called to paint
+            </summary>
+        </member>
+        <member name="F:Instruments.ScopeControl.Traces">
+            <summary>
+            This is an array of all traces, and their attributes
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.BeginAddPoint">
+            <summary>
+            Begins an 'addpoint' operation
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.AddPoint(System.Int32,System.Single)">
+            <summary>
+            Add a point related to a specific trace to the display. This should be 
+            preceded with BeginAddPoint and ended with EndAddPoint
+            </summary>
+            <param name="traceIndex"></param>
+            <param name="point"></param>
+        </member>
+        <member name="M:Instruments.ScopeControl.EndAddPoint">
+            <summary>
+            Commits the last set of points added with addpoint
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.AddPoints(System.Single[])">
+            <summary>
+            Add data to all traces simultaeneously. This does not require 
+            BeginAddPoint or EndAddPoint
+            </summary>
+            <param name="points"></param>
+        </member>
+        <member name="F:Instruments.ScopeControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Instruments.ScopeControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Instruments.ScopeControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.BackColor">
+            <summary>
+            Gets or sets the primary background color of control
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.ForeColor">
+            <summary>
+            Gets or sets the primary text color of control
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.Font">
+            <summary>
+            Gets or sets the primary font for the control
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.GridBackColor">
+            <summary>
+            Background color of the grid
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.GridColor">
+            <summary>
+            Color of major grid lines
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.MicroSecondsPerUnit">
+            <summary>
+            How many microseconds are represented by an X unit
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.GridSpacing">
+            <summary>
+            Number of units major gridlines are spaced at
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.GridVisible">
+            <summary>
+            Set this to true to show major grid lines
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.UnitsY">
+            <summary>
+            Gets or Sets the number of vertical units that are drawn by the scope. This should be a multiple of two.
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.UnitsX">
+            <summary>
+            Gets the number of units across that are drawn by the scope
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.EnableHistory">
+            <summary>
+            Enables the ability to go back and forth with the last
+            oscope trace
+            </summary>
+        </member>
+        <member name="P:Instruments.ScopeControl.IsRunning">
+            <summary>
+            This is set to true when the scope is "running", ie., you can call addpoints
+            </summary>
+        </member>
+        <member name="T:Instruments.AnalogMeter">
+            <summary>
+            Awesome analog meter. :) 
+            </summary>
+        </member>
+        <member name="M:Instruments.AnalogMeter.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Instruments.AnalogMeter.CreateBackground">
+            <summary>
+            This does all of the drawing, but it definitely could
+            be optimized... the biggest one is that the value
+            could be drawn seperately from this, since thats the value
+            that would probably be updated the most.
+            </summary>
+        </member>
+        <member name="M:Instruments.AnalogMeter.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Overrides paint event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Instruments.AnalogMeter.OnResize(System.EventArgs)">
+            <summary>
+            Overrides resize event
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Instruments.AnalogMeter.Text">
+            <summary>
+            Title to display on the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.Value">
+            <summary>
+            Value of meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.MaxValue">
+            <summary>
+            Maximum value of the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.MinValue">
+            <summary>
+            Minimum value of the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickTinyFrequency">
+            <summary>
+            Frequency of tiny ticks (0 to disable)
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickSmallFrequency">
+            <summary>
+            Frequency of small ticks (0 to disable)
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickLargeFrequency">
+            <summary>
+            Frequency of large ticks (0 to disable)
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickTinyWidth">
+            <summary>
+            Stroke width of tiny ticks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickSmallWidth">
+            <summary>
+            Stroke width of small ticks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickLargeWidth">
+            <summary>
+            Stroke width of large ticks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickStartAngle">
+            <summary>
+            Angle the meter starts display at in degrees
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickTinySize">
+            <summary>
+            Size of the tiny tick marks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickSmallSize">
+            <summary>
+            Size of the small tick marks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.TickLargeSize">
+            <summary>
+            Size of the large tick marks
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.BackColor">
+            <summary>
+            Background color of the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.Font">
+            <summary>
+            Font of the control
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.ForeColor">
+            <summary>
+            Color of tickmarks and text on meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.PointerColor">
+            <summary>
+            Color of the primary pointer
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.FrameColor">
+            <summary>
+            Color of the frame of the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.FramePadding">
+            <summary>
+            Size of the frame around the primary part of the meter
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.InternalPadding">
+            <summary>
+            Internal padding for the meter display
+            </summary>
+        </member>
+        <member name="P:Instruments.AnalogMeter.Stretch">
+            <summary>
+            Set to true if the meter should fill the entire control. Set to false to maintain a
+            rectangular outline.
+            </summary>
+        </member>
+        <member name="T:Instruments.Trace">
+            <summary>
+            Holds data to describe each trace on the scope control
+            </summary>
+        </member>
+        <member name="M:Instruments.Trace.#ctor">
+            <summary>
+            Constructor. 
+            </summary>
+        </member>
+        <member name="F:Instruments.Trace.TracePoints">
+            <summary>
+            This is a list of the points that the scope should draw.
+            </summary>
+        </member>
+        <member name="F:Instruments.Trace.Pen">
+            <summary>
+            Pen that is used to draw the trace on something
+            </summary>
+        </member>
+        <member name="E:Instruments.Trace.OnChange">
+            <summary>
+            Called when the trace changes
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.UnitName">
+            <summary>
+            Metric name of the unit this represents
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.MilliPerUnit">
+            <summary>
+            Number of milli units displayed per major unit of the scope
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.ZeroPositionY">
+            <summary>
+            Position that the trace's zero position is at relative to the
+            main zero position
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.TraceColor">
+            <summary>
+            Color of the line drawn when drawing this trace
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.LineSize">
+            <summary>
+            Size of the line drawn when drawing this trace
+            </summary>
+        </member>
+        <member name="P:Instruments.Trace.Visible">
+            <summary>
+            Set to true when the trace should be drawn, false otherwise
+            </summary>
+        </member>
+        <member name="T:Instruments.TraceCollection">
+            <summary>
+            A strongly typed collection of Traces
+            </summary>
+        </member>
+        <member name="M:Instruments.TraceCollection.InsertItem(System.Int32,Instruments.Trace)">
+            <summary>
+            Called when an item is inserted
+            </summary>
+        </member>
+        <member name="M:Instruments.TraceCollection.ClearItems">
+            <summary>
+            Called when the items are cleared
+            </summary>
+        </member>
+        <member name="M:Instruments.TraceCollection.SetItem(System.Int32,Instruments.Trace)">
+            <summary>
+            Called when an item is set
+            </summary>
+        </member>
+        <member name="M:Instruments.TraceCollection.RemoveItem(System.Int32)">
+            <summary>
+            Called when an item is removed 
+            </summary>
+            <param name="index"></param>
+        </member>
+    </members>
+</doc>

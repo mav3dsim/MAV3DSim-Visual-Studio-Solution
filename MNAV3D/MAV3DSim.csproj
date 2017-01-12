@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F7C13FF-9EF4-433C-8F79-2C2618FD5EBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MAV3DSim</RootNamespace>
+    <AssemblyName>MNAV3D</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BSE.Windows.Forms">
+      <HintPath>..\..\..\Plugins\GMap.NET.WindowsForms\BSE.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>..\..\..\Plugins\DirectShowLibV2-1\lib\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="DockSample">
+      <HintPath>..\..\..\Examples\dockpanelsuite-master\DockSample\bin\Debug\DockSample.exe</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv\bin\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\Plugins\GMap.NET.WindowsForms\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\Plugins\GMap.NET.WindowsForms\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Instruments">
+      <HintPath>..\..\..\Examples\Instruments-1.0\Instruments\Instruments\bin\Debug\Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.Native.PlotLabBasic, Version=5.0.1.0, Culture=neutral, PublicKeyToken=2d5c36a8ef0a5e08, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\LabPacks\DotNET\Bin\4.0\Mitov.Native.PlotLabBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.Native.SignalLabBasic, Version=5.0.1.0, Culture=neutral, PublicKeyToken=b6e90591977fb7c8, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\LabPacks\DotNET\Bin\4.0\Mitov.Native.SignalLabBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.PlotLab, Version=5.0.1.0, Culture=neutral, PublicKeyToken=dbd38d31b0aeb8c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\LabPacks\DotNET\Bin\4.0\Mitov.PlotLab.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.PlotLabBasic, Version=5.0.1.0, Culture=neutral, PublicKeyToken=1bb0b8a97236ac2e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\LabPacks\DotNET\Bin\4.0\Mitov.PlotLabBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Mitov.SignalLabBasic, Version=5.0.1.0, Culture=neutral, PublicKeyToken=0b44e28582c522cf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\LabPacks\DotNET\Bin\4.0\Mitov.SignalLabBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Examples\dockpanelsuite-development_3.0\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvionicsInstrumentsControls\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\AvionicsInstrumentsControlsRessources.Designer.cs" />
+    <Compile Include="AvionicsInstrumentsControls\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AvionicsInstrumentsControls\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controller\ControllerLyap3D.cs" />
+    <Compile Include="Controller\PIDFF.cs" />
+    <Compile Include="Docks\Lyapunov3DGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Lyapunov3DGains.Designer.cs">
+      <DependentUpon>Lyapunov3DGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\Navigator4D.cs" />
+    <Compile Include="Navigation\Navigator3D.cs" />
+    <Compile Include="Navigation\Navigator.cs" />
+    <Compile Include="Navigation\PathGenerator4D.cs" />
+    <Compile Include="Navigation\PathGenerator3D.cs" />
+    <Compile Include="Navigation\PathGenerator.cs" />
+    <Compile Include="Controller\PID.cs" />
+    <Compile Include="Controller\PIDQuaternion.cs" />
+    <Compile Include="Controller\Quaternion.cs" />
+    <Compile Include="Controller\UAVControlQuaternion.cs" />
+    <Compile Include="Docks\Airspeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Airspeed.Designer.cs">
+      <DependentUpon>Airspeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\AirSpeedPidGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\AirSpeedPidGains.Designer.cs">
+      <DependentUpon>AirSpeedPidGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Altimeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Altimeter.Designer.cs">
+      <DependentUpon>Altimeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\AltitudPidGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\AltitudPidGains.Designer.cs">
+      <DependentUpon>AltitudPidGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\AttitudeIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\AttitudeIndicator.Designer.cs">
+      <DependentUpon>AttitudeIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\CameraInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\CameraInput.Designer.cs">
+      <DependentUpon>CameraInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Colors.cs" />
+    <Compile Include="Docks\Compass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Compass.Designer.cs">
+      <DependentUpon>Compass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\ControlSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\ControlSelection.Designer.cs">
+      <DependentUpon>ControlSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\CRRCSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\CRRCSim.Designer.cs">
+      <DependentUpon>CRRCSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Geofence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Geofence.Designer.cs">
+      <DependentUpon>Geofence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Hastable.cs" />
+    <Compile Include="Docks\L1Gain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\L1Gain.Designer.cs">
+      <DependentUpon>L1Gain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\LyapunovGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\LyapunovGains.Designer.cs">
+      <DependentUpon>LyapunovGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\ManualControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\ManualControl.Designer.cs">
+      <DependentUpon>ManualControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\MapConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\MapConfig.Designer.cs">
+      <DependentUpon>MapConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\MapInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\MapInfo.Designer.cs">
+      <DependentUpon>MapInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\MissionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\MissionControl.Designer.cs">
+      <DependentUpon>MissionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Playback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Playback.Designer.cs">
+      <DependentUpon>Playback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Waypoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Waypoints.Designer.cs">
+      <DependentUpon>Waypoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\PointLatLngAlt.cs" />
+    <Compile Include="Navigation\Path4D.cs" />
+    <Compile Include="Utils\FilterButterworth.cs" />
+    <Compile Include="Utils\GenericParsing\FieldType.cs" />
+    <Compile Include="Utils\GenericParsing\GenericParser.cs" />
+    <Compile Include="Utils\GenericParsing\GenericParserAdapter.cs" />
+    <Compile Include="Utils\GenericParsing\ParserState.cs" />
+    <Compile Include="Utils\GenericParsing\ParsingException.cs" />
+    <Compile Include="Utils\Matrix.cs" />
+    <Compile Include="Docks\PathGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\PathGeneration.Designer.cs">
+      <DependentUpon>PathGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\PitchPidGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\PitchPidGains.Designer.cs">
+      <DependentUpon>PitchPidGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Plot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Plot.Designer.cs">
+      <DependentUpon>Plot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\PlotScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\PlotScale.Designer.cs" />
+    <Compile Include="Docks\RawData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\RawData.Designer.cs">
+      <DependentUpon>RawData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\RollPidGains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\RollPidGains.Designer.cs">
+      <DependentUpon>RollPidGains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\SerialPortConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\SerialPortConfig.Designer.cs">
+      <DependentUpon>SerialPortConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\UDPConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\UDPConfig.Designer.cs">
+      <DependentUpon>UDPConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\Verticalspeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docks\Verticalspeed.Designer.cs">
+      <DependentUpon>Verticalspeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docks\VS2013ColorTable.cs" />
+    <Compile Include="Docks\VS2012ToolStripRenderer.cs" />
+    <Compile Include="MAV3DSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAV3DSim.Designer.cs">
+      <DependentUpon>MAV3DSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\GMapLine.cs" />
+    <Compile Include="Maps\GMapMarkerImage.cs" />
+    <Compile Include="Maps\GMapMarkerLabel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Actuators.cs" />
+    <Compile Include="Utils\Com.cs" />
+    <Compile Include="Utils\IMU.cs" />
+    <Compile Include="Utils\Log.cs" />
+    <Compile Include="Utils\MapTools.cs" />
+    <Compile Include="Utils\MathTools.cs" />
+    <Compile Include="Utils\MavLink.cs" />
+    <Compile Include="Utils\MavlinkCRC.cs" />
+    <Compile Include="Utils\MavlinkUtil.cs" />
+    <Compile Include="Utils\ThreadSafe.cs" />
+    <Compile Include="Utils\WinFormControls\ColorTable.cs" />
+    <Compile Include="Utils\WinFormControls\Constants.cs" />
+    <Compile Include="Utils\WinFormControls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\WinFormControls\InputBox.cs" />
+    <Compile Include="Utils\WinFormControls\XButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\WinFormControls\CustomGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\WinFormControls\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\WinFormControls\CustomTextBox.designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\XBoxController.cs" />
+    <EmbeddedResource Include="AvionicsInstrumentsControls\AvionicsInstrumentsControlsRessources.resx" />
+    <EmbeddedResource Include="Docks\AirSpeedPidGains.resx">
+      <DependentUpon>AirSpeedPidGains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\CameraInput.resx">
+      <DependentUpon>CameraInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\ControlSelection.resx">
+      <DependentUpon>ControlSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\CRRCSim.resx">
+      <DependentUpon>CRRCSim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Geofence.resx">
+      <DependentUpon>Geofence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\L1Gain.resx">
+      <DependentUpon>L1Gain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Lyapunov3DGains.resx">
+      <DependentUpon>Lyapunov3DGains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\LyapunovGains.resx">
+      <DependentUpon>LyapunovGains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\MapConfig.resx">
+      <DependentUpon>MapConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\MissionControl.resx">
+      <DependentUpon>MissionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\PathGeneration.resx">
+      <DependentUpon>PathGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\PitchPidGains.resx">
+      <DependentUpon>PitchPidGains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Playback.resx">
+      <DependentUpon>Playback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Plot.resx">
+      <DependentUpon>Plot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\PlotScale.resx" />
+    <EmbeddedResource Include="Docks\RawData.resx">
+      <DependentUpon>RawData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\RollPidGains.resx">
+      <DependentUpon>RollPidGains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\SerialPortConfig.resx">
+      <DependentUpon>SerialPortConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\UDPConfig.resx">
+      <DependentUpon>UDPConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docks\Waypoints.resx">
+      <DependentUpon>Waypoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAV3DSim.resx">
+      <DependentUpon>MAV3DSim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utils\WinFormControls\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <Fakes Include="Fakes\mavlink.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\mavlink.net\mavlink.net\mavlink.net.csproj">
+      <Project>{2dff5e5b-eb22-4c03-bec9-994b112b8e78}</Project>
+      <Name>mavlink.net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AirSpeedIndicator_Background.bmp" />
+    <Content Include="Resources\AirSpeedNeedle.bmp" />
+    <Content Include="Resources\Altimeter_Background.bmp" />
+    <Content Include="Resources\Bandeau_Dérouleur.bmp" />
+    <Content Include="Resources\Bixler_Final4.png" />
+    <None Include="Resources\dot.png" />
+    <Content Include="Resources\Folder.png" />
+    <Content Include="Resources\Folder1.png" />
+    <Content Include="Resources\Google_Maps_Marker.png" />
+    <Content Include="Resources\Google_Maps_Marker1.png" />
+    <Content Include="Resources\HeadingIndicator_Aircraft.bmp" />
+    <Content Include="Resources\HeadingIndicator_Background.bmp" />
+    <Content Include="Resources\HeadingWeel.bmp" />
+    <Content Include="Resources\Horizon_Background.bmp" />
+    <Content Include="Resources\Horizon_GroundSky.bmp" />
+    <Content Include="Resources\Indicator_Background.bmp" />
+    <Content Include="Resources\loading-circle.png" />
+    <Content Include="Resources\loading-circle1.png" />
+    <None Include="Resources\Logo MAV3DSim.png" />
+    <None Include="Resources\Logo MAV3DSim2.png" />
+    <None Include="Resources\Logo MAV3DSim.bmp" />
+    <None Include="Resources\logo_MAV3.png" />
+    <Content Include="Resources\LongNeedleAltimeter.bmp" />
+    <Content Include="Resources\Maquette_Avion.bmp" />
+    <Content Include="Resources\MarkerImage.bmp" />
+    <Content Include="Resources\Perspective Button Stop.png" />
+    <Content Include="Resources\Perspective Button Stop1.png" />
+    <Content Include="Resources\Play.png" />
+    <Content Include="Resources\Play1.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="Resources\Save1.png" />
+    <Content Include="Resources\SmallNeedleAltimeter.bmp" />
+    <Content Include="Resources\TurnCoordinatorAircraft.bmp" />
+    <Content Include="Resources\TurnCoordinatorBall.bmp" />
+    <Content Include="Resources\TurnCoordinatorMarks.bmp" />
+    <Content Include="Resources\TurnCoordinator_Background.bmp" />
+    <Content Include="Resources\VerticalSpeedIndicator_Background.bmp" />
+    <Content Include="Resources\VerticalSpeedNeedle.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
